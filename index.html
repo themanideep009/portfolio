@@ -77,7 +77,46 @@
     <div class="hero-content">
 
       <div class="profile-container">
-        <img src="images/Profile.jpg" class="profile-pic">
+        <svg class="profile-avatar" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background Circle -->
+          <defs>
+            <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+            </linearGradient>
+            <radialGradient id="faceGradient" cx="35%" cy="35%">
+              <stop offset="0%" style="stop-color:#fdbf60;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#f4a261;stop-opacity:1" />
+            </radialGradient>
+          </defs>
+          
+          <!-- Background -->
+          <circle cx="100" cy="100" r="100" fill="url(#avatarGradient)"/>
+          
+          <!-- Head -->
+          <circle cx="100" cy="75" r="45" fill="url(#faceGradient)"/>
+          
+          <!-- Hair -->
+          <path d="M 55 60 Q 55 25 100 20 Q 145 25 145 60 Z" fill="#2d1810"/>
+          
+          <!-- Left Eye -->
+          <circle cx="85" cy="70" r="6" fill="#1a1a1a"/>
+          <circle cx="86" cy="68" r="2" fill="#ffffff"/>
+          
+          <!-- Right Eye -->
+          <circle cx="115" cy="70" r="6" fill="#1a1a1a"/>
+          <circle cx="116" cy="68" r="2" fill="#ffffff"/>
+          
+          <!-- Smile -->
+          <path d="M 90 82 Q 100 88 110 82" stroke="#d35400" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          
+          <!-- Shoulders/Shirt -->
+          <ellipse cx="100" cy="130" rx="50" ry="35" fill="#ffffff" opacity="0.95"/>
+          <rect x="60" y="115" width="80" height="40" fill="#e5e7eb" rx="8"/>
+          
+          <!-- Accent Circle -->
+          <circle cx="100" cy="100" r="98" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+        </svg>
       </div>
 
       <h1>Cherukupally Manideep Sai</h1>
@@ -467,7 +506,7 @@
       <div class="glass-card cert-card">
         <i class="fas fa-laptop-code cert-platform-logo" aria-hidden="true"></i>
         <h3>Data Structures & Algorithms</h3>
-        <p>Consistently refined my problem-solving skills by successfully completing over <strong>300+ coding
+        <p>Consistently refined my problem-solving skills by successfully completing over <strong>200+ coding
             questions</strong> on various competitive programming platforms.</p>
       </div>
 
@@ -490,7 +529,7 @@
 
     <div class="social-links">
 
-      <a href="https://mail.google.com/mail/?view=cm&to=themanideep009@gmail.com&su=Opportunity%20%7C%20Let%27s%20Connect&body=Hi%20Bhanu%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20with%20you.%0A%0ARegards%2C"
+      <a href="https://mail.google.com/mail/?view=cm&to=themanideep009@gmail.com&su=Opportunity%20%7C%20Let%27s%20Connect&body=Hi%20Manideep%20Sai%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20with%20you.%0A%0ARegards%2C"
         class="social-icon" target="_blank" rel="noopener noreferrer">
         <i class="fas fa-envelope"></i>
       </a>

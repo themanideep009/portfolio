@@ -187,3 +187,137 @@
     box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
     border-color: rgba(59, 130, 246, 0.5);
 }
+
+/* Animated Character Animations */
+@keyframes character-float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-15px) rotate(1deg);
+    }
+    50% {
+        transform: translateY(-25px) rotate(-1deg);
+    }
+    75% {
+        transform: translateY(-15px) rotate(1deg);
+    }
+}
+
+@keyframes wave-arm {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: 140px 110px;
+    }
+    25% {
+        transform: rotate(-30deg);
+        transform-origin: 140px 110px;
+    }
+    50% {
+        transform: rotate(-60deg);
+        transform-origin: 140px 110px;
+    }
+    75% {
+        transform: rotate(-30deg);
+        transform-origin: 140px 110px;
+    }
+}
+
+@keyframes blink-eyes {
+    0%, 48%, 52%, 100% {
+        ry: 5;
+    }
+    50% {
+        ry: 1;
+    }
+}
+
+@keyframes smile-mouth {
+    0%, 100% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 5;
+    }
+}
+
+@keyframes bounce-body {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.98);
+    }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
+    }
+    50% {
+        filter: drop-shadow(0 0 16px rgba(59, 130, 246, 0.8));
+    }
+}
+
+@keyframes profile-pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotateY(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateY(0deg);
+    }
+}
+
+/* Animated Character Container */
+.animated-character-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-man {
+    width: 200px;
+    height: 300px;
+    animation: character-float 4s ease-in-out infinite, glow-pulse 3s ease-in-out infinite;
+}
+
+.head {
+    animation: bounce-body 2.5s ease-in-out infinite;
+}
+
+.hair {
+    fill: #3d2817;
+}
+
+.eye {
+    animation: blink-eyes 3.5s ease-in-out infinite;
+}
+
+.mouth {
+    animation: smile-mouth 3s ease-in-out infinite;
+    stroke-dasharray: 30;
+}
+
+.shirt {
+    animation: bounce-body 2.5s ease-in-out infinite;
+}
+
+.arm {
+    transition: all 0.3s ease;
+}
+
+.arm-right {
+    animation: wave-arm 1.5s ease-in-out infinite;
+    transform-origin: 140px 110px;
+}
+
+.arm-left {
+    animation: bounce-body 2.5s ease-in-out infinite;
+}
+
+.legs {
+    animation: bounce-body 2.5s ease-in-out infinite;
+}

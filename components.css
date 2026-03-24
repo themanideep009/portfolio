@@ -256,12 +256,29 @@ to{transform:translate3d(-340px,240px,0);}
 .planet-2{width:62px; height:62px;}
 .shooting-star{width:120px;}
 .ufo{width:60px; height:18px;}
+.animated-man{width:150px; height:225px;}
+.hero-content h1{font-size:32px;}
+}
+
+@media (max-width: 480px){
+.animated-man{width:120px; height:180px;}
+.hero-content h1{font-size:24px;}
+.hero-content p{font-size:14px;}
 }
 
 @media (prefers-reduced-motion: reduce){
 .night-sky *,
-.night-sky *::before,
-.night-sky *::after{
+.night-sky *::after,
+.night-sky *::before{
+animation:none !important;
+}
+.animated-man{
+animation:none !important;
+}
+.head,.shirt,.legs,.arm-left,.eye,.mouth{
+animation:none !important;
+}
+.arm-right{
 animation:none !important;
 }
 }
@@ -353,15 +370,22 @@ max-width:750px;
 margin-bottom:20px;
 }
 
-.profile-pic{
+.animated-character-container{
+margin-bottom:20px;
+display:flex;
+justify-content:center;
+}
+
+.profile-pic,
+.profile-avatar{
 width:170px;
 height:170px;
 border-radius:50%;
 object-fit:cover;
-
 box-shadow:
 0 0 25px rgba(59,130,246,0.8),
 0 0 60px rgba(59,130,246,0.4);
+animation:profile-pop-in 0.8s cubic-bezier(0.36, 0, 0.66, 1);
 }
 
 .hero-content h1{
