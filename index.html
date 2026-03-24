@@ -16,6 +16,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <link rel="stylesheet" href="components.css">
 
@@ -51,7 +52,15 @@
 
       <a href="#home" class="nav-logo">PORTFOLIO</a>
 
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-overlay"></div>
+
+      <div class="nav-links" id="mobile-nav">
 
         <a href="#home" class="nav-link">Home</a>
         <a href="#skills" class="nav-link">Skills</a>
@@ -123,9 +132,9 @@
 
         <div class="skill-tags">
 
-          <span>C++</span>
-          <span>Java</span>
-          <span>Python</span>
+          <span><i class="devicon-cplusplus-plain" aria-hidden="true"></i>C++</span>
+          <span><i class="fab fa-java" aria-hidden="true"></i>Java</span>
+          <span><i class="fab fa-python" aria-hidden="true"></i>Python</span>
 
         </div>
 
@@ -141,10 +150,10 @@
 
         <div class="skill-tags">
 
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>React.js</span>
+          <span><i class="fab fa-html5" aria-hidden="true"></i>HTML</span>
+          <span><i class="fab fa-css3-alt" aria-hidden="true"></i>CSS</span>
+          <span><i class="fab fa-js" aria-hidden="true"></i>JavaScript</span>
+          <span><i class="fab fa-react" aria-hidden="true"></i>React.js</span>
 
         </div>
 
@@ -160,8 +169,8 @@
 
         <div class="skill-tags">
 
-          <span>Node.js</span>
-          <span>Express.js</span>
+          <span><i class="fab fa-node-js" aria-hidden="true"></i>Node.js</span>
+          <span><i class="fas fa-server" aria-hidden="true"></i>Express.js</span>
         </div>
 
       </div>
@@ -176,10 +185,10 @@
 
         <div class="skill-tags">
 
-          <span>React</span>
-          <span>Express</span>
-          <span>Tailwind</span>
-          <span>Bootstrap</span>
+          <span><i class="fab fa-react" aria-hidden="true"></i>React</span>
+          <span><i class="fas fa-server" aria-hidden="true"></i>Express</span>
+          <span><i class="fas fa-wind" aria-hidden="true"></i>Tailwind</span>
+          <span><i class="fab fa-bootstrap" aria-hidden="true"></i>Bootstrap</span>
 
         </div>
 
@@ -195,9 +204,9 @@
 
         <div class="skill-tags">
 
-          <span>MongoDB</span>
-          <span>MySQL</span>
-          <span>PostgreSQL</span>
+          <span><i class="fas fa-leaf" aria-hidden="true"></i>MongoDB</span>
+          <span><i class="fas fa-database" aria-hidden="true"></i>MySQL</span>
+          <span><i class="fas fa-database" aria-hidden="true"></i>PostgreSQL</span>
 
         </div>
 
@@ -213,14 +222,14 @@
 
         <div class="skill-tags">
 
-          <span>Git</span>
-          <span>GitHub</span>
-          <span>Vercel</span>
-          <span>AWS</span>
-          <span>Docker</span>
-          <span>Kubernetes</span>
-          <span>Jenkins</span>
-          <span>Terraform</span>
+          <span><i class="fab fa-git-alt" aria-hidden="true"></i>Git</span>
+          <span><i class="fab fa-github" aria-hidden="true"></i>GitHub</span>
+          <span><i class="fas fa-bolt" aria-hidden="true"></i>Vercel</span>
+          <span><i class="fab fa-aws" aria-hidden="true"></i>AWS</span>
+          <span><i class="fab fa-docker" aria-hidden="true"></i>Docker</span>
+          <span><i class="fas fa-dharmachakra" aria-hidden="true"></i>Kubernetes</span>
+          <span><i class="fas fa-cogs" aria-hidden="true"></i>Jenkins</span>
+          <span><i class="fas fa-cubes" aria-hidden="true"></i>Terraform</span>
 
         </div>
 
